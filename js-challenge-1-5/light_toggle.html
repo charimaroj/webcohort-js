@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Bulb</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <div id="light" class="light_off">          
+        </div>
+       
+    </div>
+    <div class="container">     
+        <button class="button" id="toggle-btn">Light On</button> 
+    </div>
+    <script>
+
+        const lightEle = document.getElementById('light');
+        const toggleBtn = document.getElementById('toggle-btn')
+
+        toggleBtn.addEventListener('click', function () {
+            if(lightEle.classList.contains("light_off")){
+                lightEle.classList.add("light_on");
+                lightEle.classList.remove("light_off");
+                this.textContent ="Light Off"
+            }else{
+                lightEle.classList.add("light_off");
+                lightEle.classList.remove("light_on");
+                this.textContent ="Light On"
+            }
+              
+                
+           
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("/week-7/JS-Challenges/Challenge-1/images/light_off_on_bg.jpg");
+    background-repeat: repeat-x;
+    background-color: #292929;
+ 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+}
+
+
+
+.light_off{
+    width: 261px;
+    height: 374px;
+    background-image: url("/week-7/JS-Challenges/Challenge-1/images/light_off.jpg");
+}
+
+.light_on{
+    width: 261px;
+    height: 374px;
+    background-image: url("/week-7/JS-Challenges/Challenge-1/images/light_on.jpg");
+}
+
+.button {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.button:hover::after {
+  width: 0;
+  height: 0;
+}
+
+.button span {
+  position: relative;
+  z-index: 1;
+}
