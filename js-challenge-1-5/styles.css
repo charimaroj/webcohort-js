@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("/week-7/JS-Challenges/Challenge-1/images/light_off_on_bg.jpg");
+    background-image: url("/webcohort-js/js-challenge-1-5/images/light_off_on_bg.jpg");
     background-repeat: repeat-x;
     background-color: #292929;
  
@@ -22,13 +22,13 @@ body{
 .light_off{
     width: 261px;
     height: 374px;
-    background-image: url("/week-7/JS-Challenges/Challenge-1/images/light_off.jpg");
+    background-image: url("/webcohort-js/js-challenge-1-5/images/light_off.jpg");
 }
 
 .light_on{
     width: 261px;
     height: 374px;
-    background-image: url("/week-7/JS-Challenges/Challenge-1/images/light_on.jpg");
+    background-image: url("/webcohort-js/js-challenge-1-5/images/light_on.jpg");
 }
 
 .button {
