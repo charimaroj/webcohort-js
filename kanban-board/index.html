@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban-board</title>
+    <link rel="stylesheet" href="styles.css"/>
+    
+</head>
+<body>
+    <div class="container">
+        <button id="openModal">Create Task</button>
+    </div>
+
+    <div class="container">
+        <div class="board" id="todo-board">
+            <h4>Todo</h4>
+            <!-- <div class="task">
+                <div>Title</div>
+                <p>Description</p>
+            </div>
+            <div class="task">
+                <div>Title</div>
+                <p>Description</p>
+            </div> -->
+           
+        </div>
+        <div class="board" id="inprogress-board">
+            <h4>In-Progress</h4>
+        </div>
+        <div class="board" id="testing-board">
+            <h4>Testing</h4>
+        </div>
+        <div class="board" id="completed-board">
+            <h4>Completed</h4>
+        </div>
+    </div>
+ 
+
+  
+    
+    <div id="myModal" class="modal">
+     
+        <div class="modal-content">
+            <h4>Create Task</h4>
+            <span class="close">&times;</span>
+            <input id="task-details" type="text" placeholder="enter task name"/>
+            <select id="task-board">
+                <option value="">Select</option>
+                <option value="todo">Todo</option>
+                <option value="inprogress">Inprogress</option>
+                <option value="testing">Testing</option>
+                <option value="completed">Completed</option>
+            </select>
+            <p id="modal-error"></p>
+            <button id="create-btn">Create</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
